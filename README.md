@@ -16,4 +16,12 @@
 ```
 gradlew build && java -jar build/libs/deaddoctors-hackday-1.0.jar
 ```
-4. Open in browser [http://localhost:8080] 
+
+Open in browser
+- Main page [http://localhost:8080] 
+- Search result page [http://localhost:8080/search-result] 
+- Doctor page [http://localhost:8080/doctor] 
+
+
+
+Template from > [http://startbootstrap.com/template-overviews/freelancer/]
