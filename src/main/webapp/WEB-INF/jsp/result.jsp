@@ -62,16 +62,13 @@
     <!-- About Section -->
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                	<br/><br/>
-                    <h2>Search Result</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
+
             <div class="row">
                 <div class="col-lg-7 col-lg-offset-1">
-                    
+                    <br/><br/>
+                    <h2>Search Result</h2>
+                    <p>You have search for </p>
+                    <br/>                 
                     <blockquote>
                     	<a href="/doctor">
                       	<p>Robin Turner Donald</p>
@@ -91,6 +88,7 @@
 															
                 </div>
                 <div class="col-lg-4">
+                  <br/><br/>
                     <p>Did you know?</p>
                     <span class="name">Graham Neale</span>
                     <a href="http://www.bmj.com/content/347/bmj.f6712" target="_blank">URL</a>
