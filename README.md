@@ -16,3 +16,4 @@
 ```
 gradlew build && java -jar build/libs/deaddoctors-hackday-1.0.jar
 ```
+4. Open in browser [http://localhost:8080] 
