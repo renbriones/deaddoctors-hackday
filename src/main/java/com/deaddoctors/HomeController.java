@@ -8,13 +8,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
     @RequestMapping("/")
-    public String index() {
-    	return "Greetings from Spring Boots!";
+    public ModelAndView home() {
+    	return new ModelAndView("search");
     }
     
     
     @RequestMapping("/index")
-    public ModelAndView home() {
+    public ModelAndView index() {
     	return new ModelAndView("index");
     }
     

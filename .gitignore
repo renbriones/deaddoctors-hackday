@@ -1,1 +1,13 @@
-/bin/
+build
+bin
+.gradle
+.settings
+.classpath
+.project
+gradle
+logs
+*.bak
+.gradle/*
+.settings/*
+.classpath
+.project
