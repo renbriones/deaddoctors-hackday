@@ -11,8 +11,8 @@ buildscript {
     }
 }
 
-sourceCompatibility = 1.8
-version = '1.0'
+sourceCompatibility = 1.7
+version = '1.0' 
 jar {
     manifest {
         attributes 'Implementation-Title': 'dead doctors', 'Implementation-Version': version
