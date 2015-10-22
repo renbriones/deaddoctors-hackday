@@ -198,6 +198,16 @@ section.success a.active {
     color: #2c3e50;
 }
 
+#main-search form input.form-control {
+	float: left;
+	width:100%;	
+}
+#main-search form .input-group-btn {
+	left: -100px;	
+}
+#main-search form .input-group-btn .btn {
+	height: 64px;	
+}
 .content {
 	padding-top: 50px;
 	

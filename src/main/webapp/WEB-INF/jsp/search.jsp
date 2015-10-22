@@ -66,22 +66,31 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile2.png" alt="">
 		            
-                    <div class="intro-text">
-                        
-                        <form role="form">
-					        <div class="row">
-					        <!-- 
-					            <div class="form-group inner-addon left-addon">
-					            	<i class="glyphicon glyphicon-search"></i>
-					                <input type="text" class="form-control input-lg" placeholder="Eg. name, cause of death">
-					            </div>
-					         -->
-					            <div class="inner-addon left-addon">
-								    <i class="fa fa-search fa-2x"></i>
-								    <input type="text" class="form-control input-lg" placeholder="Search for a specific obituary Eg. By name, cause of death">
-								</div>
-					        </div>	
-					    </form>
+                    <div id="main-search" class="intro-text">
+                   <form> 
+                    <div class="input-group">
+               
+                <input type="hidden" id="search_param" value="all" name="search_param">         
+                <input type="text" placeholder="Search for a specific obituary Eg. By name, cause of death" name="x" class="form-control input-lg">
+                <span class="input-group-btn">
+                 <div class="input-group-btn search-panel">
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                    	<span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                          <li><a name="deadName" href="#">Name</a></li>
+                          <li><a name="causeOfDeath" href="#">Cause of death</a></li>
+                          <li><a name="age" href="#">Age at death</a></li>
+                          <li><a name="role" href="#">Specialty</a></li>                  
+                          <li><a name="qualifiedPlace" href="#">Medical school</a></li>
+                        </ul>
+                </div>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+                    
+                    </form>
+                       
                     </div>
                 </div>
             </div>
