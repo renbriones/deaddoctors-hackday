@@ -1,9 +1,17 @@
 package com.deaddoctors.elasticsearch;
 
-import java.util.List;
+import org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository;
+import org.springframework.stereotype.Repository;
 
-public interface DeadDoctorRepository {//extends ElasticsearchRepository<DeadDoctor, String> {
+@Repository
+public class DeadDoctorRepository extends SimpleElasticsearchRepository {
 
-	public List<DeadDoctor> findByName(String name);
+	public Iterable<DeadDoctor> findByDeadName(String deadName)
+	{
+		
+		return super.findAll();
+	}
+
+
 
 }

@@ -16,8 +16,8 @@ public class DeadDoctorTempService implements DeadDoctorService{
 		DeadDoctor doctor = new DeadDoctor();
 		doctor.setId("10.1136/bmj.d7515");
 		doctor.setElocation("d7515");
-		doctor.setName("Robin Turner Donald");
-		doctor.setDeathInfo("Former general practitioner (b 1928; q 1951; DRCOG, DPM), died after a myocardial infraction on 17 October 2011");
+		doctor.setDeadName("Robin Turner Donald");
+		doctor.setNotes("Former general practitioner (b 1928; q 1951; DRCOG, DPM), died after a myocardial infraction on 17 October 2011");
 		
 		doctors.add(doctor);
 		doctors.add(doctor);

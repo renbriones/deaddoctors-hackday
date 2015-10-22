@@ -1,5 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 <!DOCTYPE html>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 
 <head>
@@ -68,14 +71,14 @@
                 <div class="col-lg-7 col-lg-offset-1">
                     <br/><br/>
                     <h2>Search Result</h2>
-                    <p>You have search for </p>
+                    <p>You have search for <i>${searchTerm}</i></p>
                     <br/>       
 					<c:forEach var="doctor" items="${doctors}">
 						<blockquote>
                     	<a href="/doctor">
-                      	<p>${doctor.name}</p>
+                      	<p>${doctor.deadName}</p>
                       	</a>
-					  <footer>${doctor.deathInfo}</footer>
+					  <footer>${doctor.notes}</footer>
 					  
 					</blockquote>
 					</c:forEach>

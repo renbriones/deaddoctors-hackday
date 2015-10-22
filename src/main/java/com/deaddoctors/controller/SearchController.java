@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.deaddoctors.elasticsearch.DeadDoctor;
-import com.deaddoctors.service.DeadDoctorTempService;
+import com.deaddoctors.service.DeadDoctorEsService;
 
 @Controller
 public class SearchController {
 
 	@Autowired
-	private DeadDoctorTempService service;
+	private DeadDoctorEsService service;
 	
     @RequestMapping("/search")
     public ModelAndView search() {
@@ -24,11 +24,12 @@ public class SearchController {
 
     @RequestMapping("/search-result")
     public ModelAndView searchResult(
-            @RequestParam(value = "searchName", required = false) String searchName) {
+            @RequestParam(value = "searchTerm", required = false) String searchTerm) {
     	ModelAndView view = new ModelAndView("result");
-    	List<DeadDoctor> result = service.findByName(searchName);
-    	view.addObject("doctors", "");
-    	
+    	//List<DeadDoctor> result = service.findByName(searchTerm);
+    	//view.addObject("doctors", service.findByName(searchTerm));
+    	view.addObject("doctors", service.findAll());
+    	view.addObject("searchTerm", searchTerm);
     	return view;
     }
 
