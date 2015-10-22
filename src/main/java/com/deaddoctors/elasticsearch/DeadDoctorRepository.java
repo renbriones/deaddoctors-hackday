@@ -34,5 +34,11 @@ public class DeadDoctorRepository extends SimpleElasticsearchRepository<DeadDoct
 		
 		return  ConverterUtil.toList(super.findAll());
 	}
+
+	public List<DeadDoctor> findByMedicalSchool(String medicalSchool)
+	{
+		
+		return  ConverterUtil.toList(super.findAll());
+	}
 	
 }

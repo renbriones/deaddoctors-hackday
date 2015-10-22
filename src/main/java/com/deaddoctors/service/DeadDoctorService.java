@@ -16,5 +16,7 @@ public interface DeadDoctorService {
 	List<DeadDoctor> findByAge(String age);
 	
 	List<DeadDoctor> findByRole(String role);
+
+	List<DeadDoctor> findByMedicalSchool(String medicalSchool);
 	
 }
