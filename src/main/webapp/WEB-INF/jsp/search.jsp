@@ -69,7 +69,7 @@
                     <div class="input-group">
                
                 <input type="hidden" id="search_param" value="all" name="search_param">         
-                <input type="text" placeholder="Search for a specific obituary Eg. By name, cause of death" name="x" class="form-control input-lg">
+                <input type="text" placeholder="Search for a specific obituary e.g. by name, cause of death" name="x" class="form-control input-lg">
                 <div class="input-group-btn">
                  <div class="btn-group search-panel">
                     <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
@@ -83,7 +83,7 @@
                           <li><a name="qualifiedPlace" href="#">Medical school</a></li>
                         </ul>
                 </div>
-                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="button" class="btn btn-default"><span class="fa fa-search fa-2x"></span></button>
                 </div>
             </div>
                     
@@ -157,7 +157,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                         &copy; 2015 The Dead Drs Team and BMJ Publishing Group Ltd
                     </div>
                 </div>
             </div>

@@ -223,11 +223,14 @@ section.success a.active {
 	background-color: #D4E2F1;	
 	border-color: #D4E2F1;
 }
+btn.dropdown-toggle {
+	border-right: 1px solid #fff;	
+}
 
 .famous-drs {
 	padding: 10px;
 	background-color: rgba(236, 240, 241, 0.5);
-	min-height: 300px;
+	min-height: 250px;
 	
 
 }

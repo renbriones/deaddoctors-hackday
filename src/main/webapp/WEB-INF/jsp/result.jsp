@@ -95,6 +95,7 @@
                 <div class="famous-drs">
              
                     <h2>Dead Doctor's Society</h2>
+                    <p>Dr's of interest and a bit about them</p>
                     <div id="bio-pic"><img class="img-responsive" src="img/doctor-bio.png" alt=""></div>
                     <h3><span class="name">Graham Neale</span></h3>
                     <p><a href="http://www.bmj.com/content/347/bmj.f6712" target="_blank">Find out more...</a></p>
