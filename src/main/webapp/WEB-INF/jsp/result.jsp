@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 
 <head>
@@ -68,23 +69,16 @@
                     <br/><br/>
                     <h2>Search Result</h2>
                     <p>You have search for </p>
-                    <br/>                 
-                    <blockquote>
+                    <br/>       
+					<c:forEach var="doctor" items="${doctors}">
+						<blockquote>
                     	<a href="/doctor">
-                      	<p>Robin Turner Donald</p>
+                      	<p>${doctor.name}</p>
                       	</a>
-					  <footer>Former general practitioner (b 1928; q 1951; DRCOG, DPM), died after a myocardial infraction on 17 October 2011</footer>
+					  <footer>${doctor.deathInfo}</footer>
 					  
 					</blockquote>
-					
-                    <blockquote>
-					  <p>Thomas Cyril Noble</p>
-					  <footer>Former general practitioner (b 1928; q 1951; DRCOG, DPM), died after a myocardial infraction on 17 October 2011</footer>
-					</blockquote>
-                    <blockquote>
-					  <p>Douglas Harrett</p>
-					  <footer>Former general practitioner (b 1928; q 1951; DRCOG, DPM), died after a myocardial infraction on 17 October 2011</footer>
-					</blockquote>
+					</c:forEach>
 															
                 </div>
                 <div class="col-lg-4">

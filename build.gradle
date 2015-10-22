@@ -25,12 +25,15 @@ repositories {
 
 dependencies {
     // Spring Boot dependencies
+    
     def springBootVersion = '1.2.7.RELEASE'
             
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: springBootVersion
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: springBootVersion
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-elasticsearch', version: springBootVersion
+    compile("org.apache.tomcat.embed:tomcat-embed-jasper")
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion    
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
