@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.deaddoctors.service.DeadDoctorEsService;
 import com.deaddoctors.service.DeadDoctorTempService;
+import com.deaddoctors.service.RandomDoctorService;
 
 @Controller
 public class SearchController {
@@ -17,6 +18,9 @@ public class SearchController {
 	
 	@Autowired
 	private DeadDoctorTempService service;
+	
+	@Autowired
+	private RandomDoctorService randomService;
 	
     @RequestMapping("/search")
     public ModelAndView search() {
@@ -33,23 +37,32 @@ public class SearchController {
     	
     	if ("deadName".equals(searchType))
     	{
-    		view.addObject("doctors", service.findByName(searchTerm));	
+    		view.addObject("doctors", service.findByName(searchTerm));
+    		view.addObject("searchType", "Name");
     	}
     	else if ("causeOfDeath".equals(searchType))
     	{
     		view.addObject("doctors", service.findByCauseOfDeath(searchTerm));
+    		view.addObject("searchType", "Cause of death");
     	}
     	else if ("age".equals(searchType))
     	{
     		view.addObject("doctors", service.findByAge(searchTerm));
+    		view.addObject("searchType", "Age at death");
     	}
     	else if ("role".equals(searchType))
     	{
     		view.addObject("doctors", service.findByRole(searchTerm));
+    		view.addObject("searchType", "Specialty");
+    	}    	
+    	else if ("qualifiedPlace".equals(searchType))
+    	{
+    		view.addObject("doctors", service.findByRole(searchTerm));
+    		view.addObject("searchType", "Medical school");
     	}    	
     	
     	view.addObject("searchTerm", searchTerm);
-    	view.addObject("searchType", searchType);
+    	view.addObject("randomDoctor", randomService.getRandom());
     	
     	return view;
     }

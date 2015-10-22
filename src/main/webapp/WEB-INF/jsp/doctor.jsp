@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Dead Doctors <br/>beyond the obituary</a>               
+                <a class="navbar-brand" href="/">Dead Doctors <br/>beyond the obituary</a>               
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
