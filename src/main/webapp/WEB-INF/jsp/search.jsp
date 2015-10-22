@@ -88,12 +88,9 @@
                           <li><a name="qualifiedPlace" href="#">Medical school</a></li>
                         </ul>
                 </div>
-<<<<<<< HEAD
-                    <button type="button" class="btn btn-default"><span class="fa fa-search fa-2x"></span></button>
-=======
 
-                    <button type="button" class="btn btn-default" id="searchButton"><span class="glyphicon glyphicon-search"></span></button>
->>>>>>> c0aee995816ea08179230b069ccb2ec6d3252290
+                    <button type="button" id="searchButton" class="btn btn-default"><span class="fa fa-search fa-2x"></span></button>
+
                 </div>
             </div>
                     
@@ -118,12 +115,12 @@
                 <div class="col-lg-4 col-lg-offset-2">
                     <p>Dead Doctors is a BMJ Hackday 2015 project. Created by Irene Briones, Olivier Renard, Chris Standing, Sean Harrop and Helen Morant. Design by Amy Asante. Consulting help from Helen King, Andy Townsend, Birte Twisselman and Simon Devitt.</p>
 
-<p>The idea behind this project is based on user research - BMJ readers rate the obituaries as one of their favourite parts of the journal. But we make it relatively difficult for users to find obituaries online, and we don’t highlight the interesting facts that obituaries reveal. The 1996 christmas edition published Which doctors die first? Analysis of BMJ obituary columns  http://www.bmj.com/content/313/7072/1581.full and we decided that it was time to open up this data to anyone who wanted to dig up more information from our corpsus.</p>
-
+<p>The idea behind this project is based on user research - BMJ readers rate the obituaries as one of their favourite parts of the journal. But we make it relatively difficult for users to find obituaries online, and we don’t highlight the interesting facts that obituaries reveal. The 1996 christmas edition published Which doctors die first? Analysis of <a href="http://www.bmj.com/content/313/7072/1581.full">BMJ obituary columns</a> and we decided that it was time to open up this data to anyone who wanted to dig up more information from our corpsus.</p>
+<p>The idea is to satisfy doctors’ morbid fascination in their colleagues’ deaths - what they died of, how old they were, and which specialities and medical schools were most likely to lead to what type of death.
 </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>The idea is to satisfy doctors’ morbid fascination in their colleagues’ deaths - what they died of, how old they were, and which specialities and medical schools were most likely to lead to what type of death. It’s a search based on the data in the obituary, which we’ve extracting using XXXX and made available on elasticsearch.</p>
+                    <p> It’s a search based on the data in the obituary, which we’ve extracting using XXXX and made available on elasticsearch.</p>
 
 <p>Future developments would be based on feedback from users, but we think they want to save and export searches, and filter their search by various factors.  We would also look to using more sophisticated text mining techniques to extract searchable information from the body of the obituary text, as well as the footnote.This would enable us to find more information about our dead doctors - number and profession of spouses and children, for example.</p>
 
