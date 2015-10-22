@@ -65,16 +65,16 @@
 
     <!-- About Section -->
     <section>
-        <div class="container">
+        <div class="container content ">
 
             <div class="row">
                 <div class="col-lg-7 col-lg-offset-1">
-                    <br/><br/>
-                    <h2>Search Result</h2>
-                    <p>You have search for <i>${searchTerm}</i></p>
-                    <br/>       
+                    <h2>Search Results</h2>
+                    <p>You have searched for <i>${searchTerm}</i> </p>
+                    <br/>                 
 					<c:forEach var="doctor" items="${doctors}">
 						<blockquote>
+
                     	<a href="/doctor">
                       	<p>${doctor.deadName}</p>
                       	</a>
@@ -85,10 +85,15 @@
 															
                 </div>
                 <div class="col-lg-4">
-                  <br/><br/>
-                    <p>Did you know?</p>
-                    <span class="name">Graham Neale</span>
-                    <a href="http://www.bmj.com/content/347/bmj.f6712" target="_blank">URL</a>
+                <div class="famous-drs">
+             
+                    <h2>Dead Doctor's Society</h2>
+                    <div id="bio-pic"><img class="img-responsive" src="img/doctor-bio.png" alt=""></div>
+                    <h3><span class="name">Graham Neale</span></h3>
+                    <p><a href="http://www.bmj.com/content/347/bmj.f6712" target="_blank">Find out more...</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc a ante gravida molestie. Duis quis pellentesque eros. Aliquam sed nulla et arcu molestie auctor. Sed pulvinar tempor dolor sed euismod. Donec quis commodo lacus.<p>
+                    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo nibh eu orci tincidunt, id facilisis lorem accumsan. Nulla finibus ornare nulla, a sagittis massa convallis id. Proin lacus orci, laoreet nec rutrum a, pretium nec dui. </p>
+                </div>
                 </div>
                 
             </div>
@@ -102,12 +107,11 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>BMA House <br/>Tavistock Square <br/>London WC1H 9JR<br/>United Kingdom</p>
+                    <div class="footer-col col-md-3">
+                      
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                    <div class="footer-col col-md-6">
+                        <h3>Keep up to date with who just popped their cloggs</h3>
                         <ul class="list-inline">
                             <li>
                     
@@ -127,8 +131,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Created by</h3>
+                    <div class="footer-col col-md-3">
+                        
                         <p></p>
                     </div>
                 </div>
@@ -138,7 +142,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                   &copy; 2015 The Dead Drs Team and BMJ Publishing Group Ltd
                     </div>
                 </div>
             </div>

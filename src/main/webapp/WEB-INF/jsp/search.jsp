@@ -67,8 +67,7 @@
                     <img class="img-responsive" src="img/profile2.png" alt="">
 		            
                     <div class="intro-text">
-                        <p>Search for a specific obituary by name</p>
-                        <hr class="star-light">
+                        
                         <form role="form">
 					        <div class="row">
 					        <!-- 
@@ -78,8 +77,8 @@
 					            </div>
 					         -->
 					            <div class="inner-addon left-addon">
-								    <i class="glyphicon glyphicon-search"></i>
-								    <input type="text" class="form-control input-lg" placeholder="Eg. name, cause of death">
+								    <i class="fa fa-search fa-2x"></i>
+								    <input type="text" class="form-control input-lg" placeholder="Search for a specific obituary Eg. By name, cause of death">
 								</div>
 					        </div>	
 					    </form>
@@ -90,7 +89,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -116,15 +115,16 @@
     <footer class="text-center" id="contact">
         <div class="footer-above">
             <div class="container">
+                <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>BMA House <br/>Tavistock Square <br/>London WC1H 9JR<br/>United Kingdom</p>
+                    <div class="footer-col col-md-3">
+                      
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                    <div class="footer-col col-md-6">
+                        <h3>Keep up to date with who just popped their cloggs</h3>
                         <ul class="list-inline">
                             <li>
+                    
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
@@ -141,11 +141,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Created by</h3>
+                    <div class="footer-col col-md-3">
+                        
                         <p></p>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="footer-below">

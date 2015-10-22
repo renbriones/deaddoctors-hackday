@@ -4,7 +4,7 @@ import org.springframework.data.elasticsearch.repository.support.SimpleElasticse
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class DeadDoctorRepository extends SimpleElasticsearchRepository {
+public class DeadDoctorRepository extends SimpleElasticsearchRepository<DeadDoctor> {
 
 	public Iterable<DeadDoctor> findByDeadName(String deadName)
 	{
