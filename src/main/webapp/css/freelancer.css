@@ -213,6 +213,16 @@ section.success a.active {
 	padding-top: 50px;
 	
 }
+.btn-default {
+	background-color: rgba(127, 168, 214, 1);	
+	border-color: rgba(127, 168, 214, 1);
+}
+.btn-default:hover,
+.btn-default:focus, 
+.btn-default:active  {
+	background-color: #D4E2F1;	
+	border-color: #D4E2F1;
+}
 
 .famous-drs {
 	padding: 10px;

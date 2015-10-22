@@ -43,9 +43,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
+                    <li class="hidden"> </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
@@ -72,8 +70,8 @@
                
                 <input type="hidden" id="search_param" value="all" name="search_param">         
                 <input type="text" placeholder="Search for a specific obituary Eg. By name, cause of death" name="x" class="form-control input-lg">
-                <span class="input-group-btn">
-                 <div class="input-group-btn search-panel">
+                <div class="input-group-btn">
+                 <div class="btn-group search-panel">
                     <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
                     	<span id="search_concept">Filter by</span> <span class="caret"></span>
                     </button>
@@ -86,7 +84,7 @@
                         </ul>
                 </div>
                     <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
+                </div>
             </div>
                     
                     </form>
@@ -150,10 +148,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-3">
-                        
-                        <p></p>
-                    </div>
+                    <div class="footer-col col-md-3"> </div>
                 </div>
             </div>
             </div>
