@@ -34,4 +34,9 @@ public class DeadDoctorEsService implements DeadDoctorService {
 		return repository.findByRole(role);
 	}
 
+	@Override
+	public List<DeadDoctor> findByMedicalSchool(String medicalSchool) {
+		return repository.findByMedicalSchool(medicalSchool);
+	}
+
 }

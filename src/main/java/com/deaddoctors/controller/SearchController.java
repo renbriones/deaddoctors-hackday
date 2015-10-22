@@ -57,7 +57,7 @@ public class SearchController {
     	}    	
     	else if ("qualifiedPlace".equals(searchType))
     	{
-    		view.addObject("doctors", service.findByRole(searchTerm));
+    		view.addObject("doctors", service.findByMedicalSchool(searchTerm));
     		view.addObject("searchType", "Medical school");
     	}    	
     	
