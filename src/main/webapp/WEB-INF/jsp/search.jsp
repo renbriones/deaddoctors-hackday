@@ -195,6 +195,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 
+	<script src="js/deaddoctor.js"></script>
+	
 </body>
 
 </html>
