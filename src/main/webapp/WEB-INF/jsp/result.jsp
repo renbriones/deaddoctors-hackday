@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Dead Doctors <br/>beyond the obituary</a>               
+                <a class="navbar-brand" href="/">Dead Doctors <br/>beyond the obituary</a>               
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,10 +97,10 @@
                     <h2>Dead Doctor's Society</h2>
                     <p>Dr's of interest and a bit about them</p>
                     <div id="bio-pic"><img class="img-responsive" src="img/doctor-bio.png" alt=""></div>
-                    <h3><span class="name">Graham Neale</span></h3>
-                    <p><a href="http://www.bmj.com/content/347/bmj.f6712" target="_blank">Find out more...</a></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet nunc a ante gravida molestie. Duis quis pellentesque eros. Aliquam sed nulla et arcu molestie auctor. Sed pulvinar tempor dolor sed euismod. Donec quis commodo lacus.<p>
-                    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo nibh eu orci tincidunt, id facilisis lorem accumsan. Nulla finibus ornare nulla, a sagittis massa convallis id. Proin lacus orci, laoreet nec rutrum a, pretium nec dui. </p>
+                    <h3><span class="name">${randomDoctor.deadName}</span></h3>
+                    <p><a href="${randomDoctor.volume}" target="_blank">Find out more...</a></p>
+                    <p>${randomDoctor.notes}<p>
+                    
                 </div>
                 </div>
                 
