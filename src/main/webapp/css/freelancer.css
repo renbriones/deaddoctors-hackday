@@ -203,7 +203,8 @@ section.success a.active {
 	width:100%;	
 }
 #main-search form .input-group-btn {
-	left: -100px;	
+	left: 0;
+		
 }
 #main-search form .input-group-btn .btn {
 	height: 64px;	
