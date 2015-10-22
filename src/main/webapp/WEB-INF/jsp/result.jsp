@@ -70,18 +70,25 @@
             <div class="row">
                 <div class="col-lg-7 col-lg-offset-1">
                     <h2>Search Results</h2>
-                    <p>You have searched for <i>${searchTerm}</i> </p>
+                    <p>You have searched for <i>${searchTerm}</i> as ${searchType}</p>
                     <br/>                 
-					<c:forEach var="doctor" items="${doctors}">
-						<blockquote>
-
-                    	<a href="/doctor">
-                      	<p>${doctor.deadName}</p>
-                      	</a>
-					  <footer>${doctor.notes}</footer>
-					  
-					</blockquote>
-					</c:forEach>
+                    <c:choose>
+                    	<c:when test="${empty doctors}">
+                    		<p>No results found </p>
+                    	</c:when> 
+                    	<c:otherwise>
+							<c:forEach var="doctor" items="${doctors}">
+								<blockquote>
+		
+		                    	<a href="/doctor">
+		                      	<p>${doctor.deadName}</p>
+		                      	</a>
+							  <footer>${doctor.notes}</footer>
+							  
+							</blockquote>
+							</c:forEach>
+                    	</c:otherwise>
+                    </c:choose>
 															
                 </div>
                 <div class="col-lg-4">
