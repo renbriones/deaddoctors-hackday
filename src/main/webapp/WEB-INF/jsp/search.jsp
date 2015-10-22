@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" src="img/profile2.png" alt="">
 		            
                     <div class="intro-text">
                         <p>Search for a specific obituary by name</p>
