@@ -1,5 +1,14 @@
 # deaddoctors-hackday
 
+Dead Doctors is a BMJ Hackday 2015 project. 
+
+Created by Irene Briones, Olivier Renard, Chris Standing, Sean Harrop and Helen Morant. 
+Design by Amy Asante.
+
+Consulting help from Helen King, Andy Townsend, Birte Twisselman and Simon Devitt.
+
+
+
 ## Technology Used
 - Spring Boot 1.2.7
 - Java 8
@@ -14,14 +23,17 @@
 2. From command line, Go to the local folder where you clone the repository
 3. Run 
 ```
-gradlew build && java -jar build/libs/deaddoctors-hackday-1.0.jar
+gradlew build 
+java -jar build/libs/deaddoctors-hackday-1.0.war
 ```
 
 Open in browser
 - Main page [http://localhost:8080] 
-- Search result page [http://localhost:8080/search-result] 
-- Doctor page [http://localhost:8080/doctor] 
 
 
+based template from > [http://startbootstrap.com/template-overviews/freelancer/]
 
-Template from > [http://startbootstrap.com/template-overviews/freelancer/]
+## Repository Contributor
+Amy Asante
+Irene Briones
+Olivier Renard

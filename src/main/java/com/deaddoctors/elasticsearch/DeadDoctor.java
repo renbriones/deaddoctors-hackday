@@ -3,8 +3,11 @@ package com.deaddoctors.elasticsearch;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 
 @Document(indexName = "obituaries1")
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class DeadDoctor {
 
 	@Id

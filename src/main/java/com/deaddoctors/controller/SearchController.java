@@ -30,14 +30,15 @@ public class SearchController {
     @RequestMapping("/search-result")
     public ModelAndView searchResult(
             @RequestParam(value = "searchTerm", required = false) String searchTerm,
-            @RequestParam(value = "searchType", required = false) String searchType) {
+            @RequestParam(value = "searchType", required = false) String searchType)
+    throws Exception{
     	ModelAndView view = new ModelAndView("result");
     	//List<DeadDoctor> result = service.findByName(searchTerm);
     	//view.addObject("doctors", service.findByName(searchTerm));
     	
     	if ("deadName".equals(searchType))
     	{
-    		view.addObject("doctors", service.findByName(searchTerm));
+    		view.addObject("doctors", esService.findByName(searchTerm));
     		view.addObject("searchType", "Name");
     	}
     	else if ("causeOfDeath".equals(searchType))
