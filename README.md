@@ -34,6 +34,6 @@ Open in browser
 based template from > [http://startbootstrap.com/template-overviews/freelancer/]
 
 ## Repository Contributor
-Amy Asante
-Irene Briones
-Olivier Renard
+- Amy Asante
+- Irene Briones
+- Olivier Renard
